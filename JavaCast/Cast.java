@@ -13,8 +13,33 @@ class Cast {
  //double -> float -> long -> int -> char -> short -> byte
 
 
-  int a ='c'; //return Asc
-   System.out.println("a = "+a);
+  // int a =(String)"zeina"; //return Asc
+  //  System.out.println("a = "+a);
 
+
+
+
+
+//Convert a String to an Integer
+
+  // String str = "25";
+  //       try{
+  //           int number = Integer.parseInt(str);
+  //           System.out.println(number); // output = 25
+  //       }
+  //       catch (NumberFormatException ex){
+  //           ex.printStackTrace();
+  //       }
+
+
+
+   String str = "25";
+        try{
+            Integer number = Integer.valueOf(str);
+            System.out.println(number); // output = 25
+        }
+        catch (NumberFormatException ex){
+            ex.printStackTrace();
+        }
     }
 }
