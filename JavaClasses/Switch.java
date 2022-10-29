@@ -12,7 +12,6 @@ Scanner sc = new Scanner (System.in);
     case 12:
        System.out.println("winter season ");
        break;
-
     case 4: 
     case 5:
     case 6:
@@ -23,7 +22,8 @@ Scanner sc = new Scanner (System.in);
     case 8:
     case 9:
        System.out.println("rainy season ");
-       break;
+    default:
+       System.out.println("invalid input ");
 
 
    }
