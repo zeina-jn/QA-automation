@@ -6,7 +6,7 @@ public class UpperandLower {
 		
 		String s = "Java Developer";
 
-		System.out.println("reverse is :"+changecase(s));
+		System.out.println("case changed :"+changecase(s));
 
 	}
 	
