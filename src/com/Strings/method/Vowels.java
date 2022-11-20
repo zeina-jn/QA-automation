@@ -1,4 +1,4 @@
-package package1;
+package com.Strings.method;
 
 public class Vowels {
 
@@ -8,7 +8,6 @@ public class Vowels {
 		// output  -- get the vowels
         int n = s.length();
         String s1="";
-        String comma = ",";
 		
         for (int i =0;i<n;i++) {
 		char a = s.charAt(i);
@@ -18,10 +17,11 @@ public class Vowels {
         		
         	     s1+=a+" ";
         		}
-         }
+           }
 		
         }
 		System.out.println("vowels are :"+s1);
+
 
 	}
 
