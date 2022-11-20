@@ -20,16 +20,15 @@ public class Reverse_Sentence {
 	    sb.append(reverseString(s3));
 	    }
 	
-	System.out.println("reverse of "+"("+s+")"+ " is "+sb.toString());
+	System.out.println("the reverse of "+"("+s+")"+ " is "+sb.toString());
 
 
 	}
 	
 	public static StringBuilder reverseString (String s) {
-	    StringBuilder m = new StringBuilder(s);
 
 	  
-		
+//create for --loop
 //		String rev = "";
 //	    int n =s.length();
 	    
@@ -38,6 +37,10 @@ public class Reverse_Sentence {
 //	    	char a = s.charAt(i);
 //	    	rev +=a;
 //	    }
+		
+		// or call StringBuilder reverse method
+	    StringBuilder m = new StringBuilder(s);
+
 		return m.reverse();
 	}
 
