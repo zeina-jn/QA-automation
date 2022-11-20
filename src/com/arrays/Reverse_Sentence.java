@@ -4,7 +4,7 @@ public class Reverse_Sentence {
 
 	public static void main(String[] args) {
 
-		String s = "Java Is Very Easy Language";
+		String s = "JavReverse_Sentence a Is Very Easy Language";
 		
 		String s1 [] = s.split(" ");
 		String s2 = "";
