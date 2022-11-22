@@ -14,7 +14,8 @@ public class ArrayToArrayList {
 	   
 	    System.out.println("converting array to arraylist: "+convToarraylist(arr));
 	    List <Integer> lt = convToarraylist(arr);
-	    System.out.println("converting arraylist to array: "+Arrays.toString(convToarray(lt)));
+	    Object[] myarray = convToarray(lt);
+	    System.out.println("converting arraylist to array: "+Arrays.toString(myarray));
 
 	}
 	
