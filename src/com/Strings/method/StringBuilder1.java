@@ -1,4 +1,4 @@
-package package1;
+package com.Strings.method;
 
 public class StringBuilder1 {
 

@@ -3,15 +3,15 @@ package com.BasicJavaPrograms;
 public class Thisstatement {
 
 	
-	Thisstatement(){
+	 Thisstatement(){
 		System.out.println("default statement");
 	}
 	
-	Thisstatement(int a ){
+	 Thisstatement(int a ){
 		this();
 		System.out.println("constructor with int args "+a);
 	}
-	Thisstatement(String b){
+	 Thisstatement(String b){
 	//	this(); // return default statement
 		this(22); // return constructor with int args
 		System.out.println("constructor with string args "+b);
