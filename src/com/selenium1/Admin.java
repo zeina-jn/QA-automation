@@ -33,6 +33,8 @@ public class Admin {
 
      webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='clickable']"))).click();
      
+    // driver.quit();
+     
      
 
 
