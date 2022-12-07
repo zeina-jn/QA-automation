@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Admin {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","/Users/Apple 1/Documents/chromedriver_mac64/chromedriver");
          WebDriver driver =   new ChromeDriver();
          driver.navigate().to("https://admin-staging.alkhattaba.app/");
@@ -23,17 +23,28 @@ public class Admin {
     //   driver.findElement(By.xpath("//input[@type='password']")).sendKeys("@et3arraf");
 
     //  driver.findElement(By.xpath("//button[@class='clickable']")).click();
-          // driver.close();
-    
+
+  
+       
+       
+     driver.manage().window().maximize() ;
      WebDriverWait webdwait = new WebDriverWait(driver, Duration.ofSeconds(10));
+     
+     
+     //successfull login
 
      webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Username']"))).sendKeys("zeina@et3arraf.com");
-
      webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']"))).sendKeys("@et3arraf");
+     Thread.sleep(3000);
 
      webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='clickable']"))).click();
-     
-    // driver.quit();
+     Thread.sleep(3000);
+
+     // go to users advanced
+     webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='menu-item']"))).click();
+
+     webdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/users/advanced']"))).click();
+
      
      
 
