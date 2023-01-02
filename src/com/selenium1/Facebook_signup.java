@@ -16,7 +16,9 @@ public class Facebook_signup {
         driver.navigate().to("https://www.facebook.com/");
         
         //sign up button
-        driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
+     //   driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
+        driver.findElement(By.linkText("Create New Account")).click();
+
          Thread.sleep(3000);
       boolean signup = driver.findElement(By.xpath("//div[@class='_n3']")).isDisplayed();
 
@@ -46,7 +48,8 @@ public class Facebook_signup {
           
           //date of birth
           Select  birthdaday = new Select (driver.findElement(By.name("birthday_day")));
-          birthdaday.selectByVisibleText("5");
+         // birthdaday.selectByVisibleText("5");
+          birthdaday.selectByIndex(6);
           
           //birthday_month
           Select  birthdmonth = new Select (driver.findElement(By.name("birthday_month")));
